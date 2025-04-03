@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Расписание групп</title>
+    <link rel="stylesheet" href="style rasp.css">
+    <link rel="stylesheet" href="style.clock.css">
+</head>
+<body>
+    <div class="clock-container">
+        <div class="digital-clock" id="clock">
+            <span class="time-section" id="hours">00</span>
+            <span class="separator">:</span>
+            <span class="time-section" id="minutes">00</span>
+            <span class="separator">:</span>
+            <span class="time-section" id="seconds">00</span>
+            <span class="time-section" id="ampm">AM</span>
+        </div>
+        <div class="date" id="date"></div>
+    </div>
+
+    <ul class="schedule-menu">
+        <li class="day-item">
+            Понедельник
+            <div class="groups-dropdown">
+                <a href="#group1-mon" class="group-link">ВЕБ1-23</a>
+                <a href="#group2-mon" class="group-link">ВЕБ2-23</a>
+            </div>
+        </li>
+        <li class="day-item">
+            Вторник
+            <div class="groups-dropdown">
+                <a href="#group3-tue" class="group-link">ВЕБ1-23</a>
+                <a href="#group4-tue" class="group-link">ВЕБ2-23</a>
+            </div>
+        </li>
+        <li class="day-item">
+            Среда
+            <div class="groups-dropdown">
+                <a href="#group5-wed" class="group-link">ВЕБ1-23</a>
+                <a href="#group6-wed" class="group-link">ВЕБ2-23</a>
+            </div>
+        </li>
+        <li class="day-item">
+            Четверг
+            <div class="groups-dropdown">
+                <a href="#group7-Thus" class="group-link">ВЕБ1-23</a>
+                <a href="#group8-Thus" class="group-link">ВЕБ2-23</a>
+            </div>
+        </li>
+        <li class="day-item">
+            Пятница
+            <div class="groups-dropdown">
+                <a href="#group9-fr" class="group-link">ВЕБ1-23</a>
+                <a href="#group10-fr" class="group-link">ВЕБ2-23</a>
+            </div>
+        </li>
+    </ul>
+
+    <div id="schedule-content" class="schedule-page">
+        Выберите день и группу для просмотра расписания
+    </div>
+    
+    <script src="script clock.js"></script>
+    <script src="script rasp.js"></script>
+</body>
+</html>

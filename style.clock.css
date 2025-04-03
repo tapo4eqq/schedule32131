@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: #ffffff;
+    font-family: 'Segment7', monospace;
+}
+
+@font-face {
+    font-family: 'Segment7';
+    src: url('https://fonts.gstatic.com/s/segment7/v4/K3Fy_5JnFfQCRT8nDpc2hOs.woff2') format('woff2');
+}
+
+.clock-container {
+    background: #2d2d2d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(40, 2, 255, 0.904);
+}
+
+.digital-clock {
+    background: #000000;
+    color: #b307f7;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 4em;
+    text-shadow: 0 0 10px #b20dff;
+}
+
+.time-section {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.separator {
+    animation: blink 1s step-end infinite;
+}
+
+.date{
+    color: #cd32b3;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 15px;
+    font-family: Arial, sans-serif;
+    text-shadow: 0 0 15px #b307f7;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
